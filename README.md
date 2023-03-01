@@ -1,2 +1,2 @@
 # screenshotWindowsWindow
-differents way to capture a window in windows
+differents way to capture a window in windows in C++

@@ -1,0 +1,10 @@
+^C:\USERS\DOUWI\DESKTOP\SCREENSHOTWINDOWSWINDOW\OPENGL\BUILD\CMAKEFILES\CDA9CC0B2E6909C59FF06C4382CB6B6B\GENERATE.STAMP.RULE
+setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl -BC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/openGlCapture.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

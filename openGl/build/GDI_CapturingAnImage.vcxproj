@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C2231DE-1E9E-3182-ACF9-49755BD68F0D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>GDI_CapturingAnImage</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GDI_CapturingAnImage.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GDI_CapturingAnImage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GDI_CapturingAnImage.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GDI_CapturingAnImage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GDI_CapturingAnImage.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GDI_CapturingAnImage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GDI_CapturingAnImage.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GDI_CapturingAnImage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Douwi/Documents/devLibraries/openCV4.7-Build/install/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_gapi470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stitching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_aruco470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_barcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bioinspired470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ccalib470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudabgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudastereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dpm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_face470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_fuzzy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_hfs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_img_hash470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_intensity_transform470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_line_descriptor470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_mcc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_quality470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rapid470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_reg470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rgbd470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_saliency470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_structured_light470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_surface_matching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_tracking470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videostab470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_wechat_qrcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xfeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xphoto470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_shape470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_highgui470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_datasets470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_plot470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_text470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ml470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_phase_unwrapping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudacodec470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videoio470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaoptflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudalegacy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudawarping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_optflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ximgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_video470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgcodecs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_calib3d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_features2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_flann470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_photo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaimgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafilters470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaarithm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_core470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudev470.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/Debug/GDI_CapturingAnImage.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/Debug/GDI_CapturingAnImage.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Douwi/Documents/devLibraries/openCV4.7-Build/install/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_gapi470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stitching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_aruco470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_barcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bioinspired470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ccalib470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudabgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudastereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dpm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_face470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_fuzzy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_hfs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_img_hash470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_intensity_transform470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_line_descriptor470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_mcc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_quality470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rapid470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_reg470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rgbd470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_saliency470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_structured_light470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_surface_matching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_tracking470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videostab470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_wechat_qrcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xfeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xphoto470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_shape470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_highgui470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_datasets470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_plot470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_text470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ml470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_phase_unwrapping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudacodec470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videoio470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaoptflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudalegacy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudawarping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_optflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ximgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_video470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgcodecs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_calib3d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_features2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_flann470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_photo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaimgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafilters470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaarithm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_core470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudev470.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/Release/GDI_CapturingAnImage.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/Release/GDI_CapturingAnImage.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Douwi/Documents/devLibraries/openCV4.7-Build/install/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_gapi470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stitching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_aruco470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_barcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bioinspired470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ccalib470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudabgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudastereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dpm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_face470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_fuzzy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_hfs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_img_hash470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_intensity_transform470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_line_descriptor470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_mcc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_quality470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rapid470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_reg470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rgbd470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_saliency470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_structured_light470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_surface_matching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_tracking470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videostab470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_wechat_qrcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xfeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xphoto470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_shape470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_highgui470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_datasets470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_plot470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_text470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ml470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_phase_unwrapping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudacodec470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videoio470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaoptflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudalegacy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudawarping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_optflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ximgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_video470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgcodecs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_calib3d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_features2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_flann470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_photo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaimgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafilters470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaarithm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_core470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudev470.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/MinSizeRel/GDI_CapturingAnImage.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/MinSizeRel/GDI_CapturingAnImage.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Douwi/Documents/devLibraries/openCV4.7-Build/install/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_gapi470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stitching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_aruco470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_barcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_bioinspired470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ccalib470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudabgsegm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudastereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dpm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_face470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_fuzzy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_hfs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_img_hash470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_intensity_transform470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_line_descriptor470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_mcc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_quality470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rapid470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_reg470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_rgbd470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_saliency470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_stereo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_structured_light470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_superres470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_surface_matching470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_tracking470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videostab470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_wechat_qrcode470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xfeatures2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xobjdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_xphoto470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_shape470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_highgui470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_datasets470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_plot470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_text470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ml470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_phase_unwrapping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudacodec470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_videoio470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaoptflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudalegacy470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudawarping470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_optflow470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_ximgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_video470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgcodecs470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_objdetect470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_calib3d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_dnn470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_features2d470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_flann470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_photo470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaimgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudafilters470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_imgproc470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudaarithm470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_core470.lib;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\opencv_cudev470.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.0/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/RelWithDebInfo/GDI_CapturingAnImage.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/RelWithDebInfo/GDI_CapturingAnImage.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl -BC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build --check-stamp-file C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig-version.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-debug.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-release.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA\select_compute_arch.cmake;C:\msys64\mingw64\share\cmake\Modules\FindOpenGL.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl -BC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build --check-stamp-file C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig-version.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-debug.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-release.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA\select_compute_arch.cmake;C:\msys64\mingw64\share\cmake\Modules\FindOpenGL.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl -BC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build --check-stamp-file C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig-version.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-debug.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-release.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA\select_compute_arch.cmake;C:\msys64\mingw64\share\cmake\Modules\FindOpenGL.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl -BC:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build --check-stamp-file C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig-version.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVConfig.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-debug.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules-release.cmake;C:\Users\Douwi\Documents\devLibraries\openCV4.7-Build\install\x64\vc17\lib\OpenCVModules.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCXXInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA.cmake;C:\msys64\mingw64\share\cmake\Modules\FindCUDA\select_compute_arch.cmake;C:\msys64\mingw64\share\cmake\Modules\FindOpenGL.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-CXX.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Douwi\Desktop\screenshotWindowsWindow\openGl\build\ZERO_CHECK.vcxproj">
+      <Project>{5EFAE676-9D63-392D-B3A2-CD48BA537A2D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

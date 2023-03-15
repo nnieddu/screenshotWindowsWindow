@@ -1,0 +1,72 @@
+# cmake_minimum_required(VERSION 3.10)
+# project(GDI_CapturingAnImage VERSION 0.1.0)
+
+# include(CTest)
+# enable_testing()
+# set(CMAKE_CXX_STANDARD 17)
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_EXTENSIONS OFF)
+
+# find_package(OpenCV REQUIRED)
+# find_package(OpenGL REQUIRED)
+
+# # Set the minimum supported version of Windows to Windows 10 version 1809
+# add_compile_definitions(WINVER=0x0A00)
+# add_compile_definitions(_WIN32_WINNT=0x0A00)
+
+
+# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+# include(CPack)
+
+
+# # Include the zlib header file directory
+
+# add_executable(GDI_CapturingAnImage main.cpp)
+
+# include_directories( ${OpenCV_INCLUDE_DIRS} )
+# link_directories( ${OpenCV_LIB_DIR} )
+
+# # find_path(DXSDK_INCLUDE_DIR d3dx9.h
+# #     HINTS "$ENV{DXSDK_DIR}/Include"
+# #     PATHS "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include")
+
+# # # Find the DirectX SDK library directory
+# # find_library(DXSDK_LIBRARY d3dx9
+# #     HINTS "$ENV{DXSDK_DIR}/Lib/x64"
+# #     PATHS "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64")
+
+# # # Add the DirectX SDK include directory to the include path
+# # if(DXSDK_INCLUDE_DIR)
+# #   include_directories(${DXSDK_INCLUDE_DIR})
+# # endif()
+
+# # Link against the DirectX libraries
+# if(DXSDK_LIBRARY)
+#   target_link_libraries(GDI_CapturingAnImage glfw3 ${OpenCV_LIBS} OpenGL::GL)
+# endif()
+
+cmake_minimum_required(VERSION 3.12)
+
+project(GDI_CapturingAnImage CXX)
+
+find_package(OpenGL REQUIRED)
+find_package(OpenCV REQUIRED)
+find_library(WINRT WindowsApp)
+find_library(D3D11_LIBRARY d3d11.lib)
+find_library(DXGI_LIBRARY dxgi.lib)
+
+# Set the path to the GLFW directory
+set(GLFW_DIR "C:/Users/Douwi/Documents/devLibraries/glfw-3.3.8.bin.WIN64")
+
+# Include the GLFW header files
+include_directories(${GLFW_DIR}/include/)
+
+# Link to the GLFW library
+link_directories(${GLFW_DIR}/lib-vc2022)
+
+add_executable(GDI_CapturingAnImage main.cpp)
+
+target_compile_features(GDI_CapturingAnImage PUBLIC cxx_std_17)
+target_include_directories(GDI_CapturingAnImage PRIVATE ${OPENGL_INCLUDE_DIR} ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(GDI_CapturingAnImage PRIVATE ${OPENGL_LIBRARIES} ${OpenCV_LIBS} ${WINRT} ${D3D11_LIBRARY} ${DXGI_LIBRARY})

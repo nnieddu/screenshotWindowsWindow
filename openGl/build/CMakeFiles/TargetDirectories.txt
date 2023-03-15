@@ -1,0 +1,4 @@
+C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/openGlCapture.dir
+C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/PACKAGE.dir
+C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Douwi/Desktop/screenshotWindowsWindow/openGl/build/CMakeFiles/ZERO_CHECK.dir
